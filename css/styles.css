@@ -79,6 +79,7 @@ img {
 .header-page {
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
+
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -498,7 +499,7 @@ img {
 }
 
 /* =========================
-   FOOTER + SUBSCRIBE
+   FOOTER
 ========================= */
 
 .footer {
@@ -507,14 +508,20 @@ img {
   padding-bottom: 100px;
 }
 
+/* ✅ corrected layout: no global gap + no margin-left:auto */
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  gap: 0;
 }
 
 .footer-brand {
   max-width: 264px;
+  margin-right: 120px; /* 1 -> 2 */
+}
+
+.footer-social {
+  margin-right: 80px; /* 2 -> 3 */
 }
 
 .footer-logo {
@@ -545,21 +552,19 @@ img {
   color: var(--white);
 }
 
-/* footer socials gap 16 */
+/* footer socials */
 .footer-socials-list {
   gap: 16px;
 }
 
-/* footer hover green */
 .footer .socials-link:hover,
 .footer .socials-link:focus {
   background-color: #31d0aa;
 }
 
-/* SUBSCRIBE */
-.footer-subscribe {
-  margin-left: auto;
-}
+/* =========================
+   SUBSCRIBE
+========================= */
 
 .subscribe-form {
   display: flex;
@@ -583,7 +588,6 @@ img {
   color: var(--white);
   outline: transparent;
 
-  /* ✅ required */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: border-color var(--transition);
@@ -614,10 +618,11 @@ img {
   color: var(--white);
 
   font-weight: 500;
+  font-size: 16px;      /* ✅ required */
+  line-height: 1.5;     /* ✅ required */
   letter-spacing: 0.04em;
 
   cursor: pointer;
-
   transition: background-color var(--transition);
 }
 
@@ -666,7 +671,7 @@ img {
   width: 408px;
   min-height: 584px;
 
-  background-color: var(--white);
+  background-color: #fcfcfc; /* ✅ required */
   border-radius: 4px;
 
   padding: 72px 24px 24px;
