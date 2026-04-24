@@ -1,6 +1,7 @@
-
-
-/* ===== BASE / VARIABLES ===== */
+/* =========================
+   GOIT WebStudio HW-05
+   styles.css (HW4 + HW5)
+========================= */
 
 :root {
   --iris: #4d5ae5;
@@ -14,7 +15,7 @@
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== GLOBAL RESET ===== */
+/* ===== RESET ===== */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -84,7 +85,7 @@ img {
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
 
-  /* REQUIRED shadow on header */
+  /* required shadow */
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -129,7 +130,6 @@ img {
 .nav-item-link {
   position: relative;
   display: block;
-
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -245,7 +245,7 @@ img {
 
   cursor: pointer;
 
-  /* REQUIRED shadow on hero button */
+  /* required shadow */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color var(--transition);
@@ -257,7 +257,7 @@ img {
 }
 
 /* =========================
-   FACTS / FEATURES
+   FACTS
 ========================= */
 
 .facts {
@@ -284,9 +284,8 @@ img {
 
   background-color: var(--cloud);
 
-  /* REQUIRED border color */
+  /* required border */
   border: 1px solid #8e8f99;
-
   border-radius: 4px;
 }
 
@@ -353,7 +352,7 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* REQUIRED padding 32px 16px */
+/* required padding */
 .container-team-list {
   padding: 32px 16px;
 }
@@ -381,7 +380,7 @@ img {
   color: var(--slate);
 }
 
-/* Social icons (team + footer base) */
+/* socials */
 .socials {
   display: flex;
   justify-content: center;
@@ -442,7 +441,6 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -473,7 +471,6 @@ img {
   inset: 0;
 
   padding: 40px 32px;
-
   background-color: var(--iris);
   color: var(--cloud);
 
@@ -516,7 +513,7 @@ img {
 }
 
 /* =========================
-   FOOTER (social + subscribe)
+   FOOTER + SUBSCRIBE
 ========================= */
 
 .footer {
@@ -563,19 +560,18 @@ img {
   color: var(--white);
 }
 
-/* REQUIRED footer gap 16px */
+/* footer socials gap 16 */
 .footer-socials-list {
   gap: 16px;
 }
 
-/* Footer hover color (GoIT макет: #31d0aa) */
+/* footer hover green */
 .footer .socials-link:hover,
 .footer .socials-link:focus {
   background-color: #31d0aa;
 }
 
-/* ===== Subscribe form (HW5) ===== */
-
+/* Subscribe */
 .footer-subscribe {
   margin-left: auto;
 }
@@ -630,6 +626,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.04em;
+
   cursor: pointer;
 
   transition: background-color var(--transition);
@@ -645,7 +642,7 @@ img {
 }
 
 /* =========================
-   MODAL (HW5)
+   MODAL
 ========================= */
 
 .backdrop {
@@ -770,10 +767,9 @@ img {
   border-radius: 4px;
 
   background-color: transparent;
-
   padding-left: 38px;
-  outline: transparent;
 
+  outline: transparent;
   transition: border-color var(--transition);
 }
 
@@ -787,7 +783,7 @@ img {
   transition: fill var(--transition);
 }
 
-/* Focus: border + icon */
+/* focus -> border + icon color */
 .modal-input:focus {
   border-color: var(--iris);
 }
@@ -812,6 +808,8 @@ img {
   color: rgba(46, 47, 66, 0.4);
 
   outline: transparent;
+
+  /* required: fixed size */
   resize: none;
 
   transition: border-color var(--transition);
@@ -855,8 +853,7 @@ img {
 
   fill: transparent;
 
-  transition: background-color var(--transition), border-color var(--transition),
-    fill var(--transition);
+  transition: background-color var(--transition), border-color var(--transition), fill var(--transition);
 }
 
 .modal-check-input:checked + .modal-check-label .modal-check-box {
@@ -884,7 +881,6 @@ img {
   cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   transition: background-color var(--transition);
 }
 
