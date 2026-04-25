@@ -54,7 +54,7 @@ button {
 /* ===== CONTAINER (adaptive) ===== */
 .container {
   width: 100%;
-  max-width: 428px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -900,8 +900,8 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: calc(100% - 32px);
-  max-width: 320px; /* narrower mobile dialog */
+  width: 288px;
+  max-width: 288px; /* narrower mobile dialog */
   min-height: 584px;
 
   background-color: #fcfcfc;
@@ -1222,22 +1222,21 @@ button {
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
-/* reviewer asked: phone not huge 36 */
 .mobile-contact-link.phone {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--slate);
+  color: var(--iris);
 }
 
 .mobile-contact-link.email {
   font-weight: 500; /* highlighted weight */
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
