@@ -889,3 +889,270 @@ img {
 .modal-submit:focus {
   background-color: var(--ocean);
 }
+/* =========================
+   MODULE 6 (RESPONSIVE) - add to the END of styles.css
+========================= */
+
+/* container becomes fluid */
+.container {
+  width: 100%;
+  max-width: 1158px;
+}
+
+/* ====== Mobile base (<=767) ====== */
+@media (max-width: 767px) {
+  /* header layout */
+  .nav-list {
+    display: none;
+  }
+  .add-page {
+    display: none;
+  }
+
+  .nav-page {
+    gap: 0;
+  }
+
+  /* hero */
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  /* facts */
+  .facts {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .facts-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .facts-item {
+    width: 100%;
+  }
+
+  /* team */
+  .ourteam {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .ourteam-list {
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+  }
+
+  .ourteam-item {
+    width: 264px; /* как в макете карточка */
+  }
+
+  /* portfolio */
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-right: 0;
+  }
+
+  .footer-social {
+    margin-right: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .subscribe-input {
+    width: 288px;
+  }
+
+  /* modal */
+  .modal {
+    width: calc(100% - 36px);
+    max-width: 392px;
+  }
+}
+
+/* ====== Tablet (>=768) ====== */
+@media (min-width: 768px) {
+  /* header */
+  .add-page {
+    display: block;
+  }
+
+  .add-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .add-item-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  /* hero */
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  /* facts: 2 columns */
+  .facts {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .facts-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+
+  .facts-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* team: 2 columns */
+  .ourteam {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .ourteam-list {
+    flex-wrap: wrap;
+    row-gap: 64px;
+    justify-content: center;
+  }
+
+  .ourteam-item {
+    width: 264px;
+  }
+
+  /* portfolio: 2 columns */
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* footer: 2 columns + subscribe below/right */
+  .footer-container {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: baseline;
+  }
+
+  .footer-brand {
+    margin-right: 0;
+  }
+
+  .footer-social {
+    margin-right: 0;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
+/* ====== Desktop (>=1158) ====== */
+@media (min-width: 1158px) {
+  /* header */
+  .add-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .add-item-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* sections paddings back to desktop */
+  .facts {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .facts-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .ourteam {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* footer: 3 columns and subscribe pinned right */
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .footer-brand {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto; /* ✅ прижали к правому краю */
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+}
